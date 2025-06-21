@@ -2,21 +2,11 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div>
-      <nav className="navbar">
-        <ul>
-            <li>
-                <link to='/'>Home</link>
-            </li>
-            <li>
-                <link to='/about'>About</link>
-            </li>
-            <li>
-                <link to='/services'>Services</link>
-            </li>
-        </ul>
-      </nav>
-    </div>
+    <nav style={{ padding: '1rem', background: '#eee' }}>
+      <Link to="/" style={{ marginRight: '1rem' }}>Home</Link>
+      <Link to="/about" style={{ marginRight: '1rem' }}>About</Link>
+      <Link to="/service">Service</Link>
+    </nav>
   )
 }
 
